@@ -33,6 +33,17 @@ ___
 ```bash
 npm install @nasriya/mimex
 ```
+
+## 2. Importing
+Importing in **ESM** modules
+```js
+import mimex from '@nasriya/mimex';
+```
+
+Importing in **CommonJS** modules
+```js
+const mimex = require('@nasriya/mimex').default;
+```
 ___
 ## Usage
 

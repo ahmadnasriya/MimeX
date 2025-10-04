@@ -34,7 +34,7 @@ ___
 npm install @nasriya/mimex
 ```
 
-## 2. Importing
+## Importing
 Importing in **ESM** modules
 ```js
 import mimex from '@nasriya/mimex';

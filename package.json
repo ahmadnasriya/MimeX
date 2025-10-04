@@ -1,6 +1,6 @@
 {
   "name": "@nasriya/mimex",
-  "version": "0.0.1-beta",
+  "version": "0.0.2-beta",
   "description": "A lightweight MIME type and file extension manager for Node.js and web applications. Mimex provides fast lookup, extension-to-MIME and MIME-to-extension resolution, and easy registration of custom types.",
   "keywords": [
     "mime",

@@ -1,0 +1,71 @@
+{
+  "name": "@nasriya/mimex",
+  "version": "0.0.1-beta",
+  "description": "A lightweight MIME type and file extension manager for Node.js and web applications. Mimex provides fast lookup, extension-to-MIME and MIME-to-extension resolution, and easy registration of custom types.",
+  "keywords": [
+    "mime",
+    "mimetype",
+    "mimes",
+    "file-extension",
+    "mime-types",
+    "mime-database",
+    "mime-manager",
+    "mimex",
+    "content-type",
+    "file-type",
+    "lookup",
+    "nodejs",
+    "utility",
+    "nasriya",
+    "javascript"
+  ],
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/@types/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/@types/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs && postbuild",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "postbuild-init": "postbuild-init",
+    "test": "jest",
+    "deepTest": "jest --coverage"
+  },
+  "maintainers": [
+    {
+      "name": "Ahmad Nasriya",
+      "email": "ahmad@nasriya.net",
+      "url": "https://www.linkedin.com/in/ahmadnasriya/"
+    }
+  ],
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/nasriyasoftware/MimeX"
+  },
+  "bugs": {
+    "url": "https://github.com/nasriyasoftware/MimeX/issues"
+  },
+  "homepage": "https://package.nasriya.net/MimeX",
+  "funding": {
+    "type": "individual",
+    "url": "https://fund.nasriya.net/"
+  },
+  "license": "NOL-1",
+  "author": "Nasriya Software",
+  "devDependencies": {
+    "@nasriya/postbuild": "^1.1.5",
+    "@types/jest": "^30.0.0",
+    "ts-jest": "^29.4.4",
+    "typescript": "^5.9.3"
+  }
+}
